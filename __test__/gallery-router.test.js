@@ -229,7 +229,7 @@ describe('Gallery Routes', function() {
     });
 
     it('should return a 404 error with a valid request but no id', done => {
-      request.put(`${url}/api/gallery/1234`)
+      request.put(`${url}/api/gallery/`)
         .send(exampleGallery)
         .set({
           Authorization: `Bearer ${this.tempToken}`,
